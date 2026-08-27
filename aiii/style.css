@@ -1,3 +1,144 @@
-.titulo{
+:root {
+  --bg-color: #f4f7fb;
+  --card-color: #ffffff;
+  --primary-color: #1d4ed8;
+  --primary-dark: #143a9c;
+  --text-color: #1f2937;
+  --muted-color: #4b5563;
+  --shadow: rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #edf5ff 0%, var(--bg-color) 100%);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(29, 78, 216, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+header {
+  padding: 1rem 1rem 0;
+}
+
+.titulo {
   text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 1rem 0 0.5rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--muted-color);
+  margin: 0 auto 2rem;
+  max-width: 760px;
+}
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.card {
+  background: var(--card-color);
+  border-radius: 20px;
+  box-shadow: 0 12px 32px var(--shadow);
+  padding: 1.5rem;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0 0 1rem;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+}
+
+.card img {
+  display: block;
+  width: min(100%, 500px);
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--muted-color);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    padding: 1.1rem;
+  }
+}
+
+.card-roma {
+  margin-top: 2rem;
+}
+
+.card-roma h3 {
+  text-align: center;
+}
+
+.card-roma a {
+  display: block;
+  text-align: center;
+}
+
+.card-roma img {
+  display: block;
+  width: min(100%, 500px);
+  height: auto;
+  margin: 0 auto 1rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
+}
+
+.card-roma p {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--muted-color);
+  margin: 0;
 }
