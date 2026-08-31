@@ -116,6 +116,7 @@ main {
 
 .card-roma {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-roma h3 {
@@ -141,4 +142,11 @@ main {
   font-size: 1.05rem;
   color: var(--muted-color);
   margin: 0;
+}
+
+.niágara{
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1rem 0;
 }
