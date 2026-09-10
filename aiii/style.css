@@ -114,7 +114,7 @@ main {
   }
 }
 
-.card-roma {
+.card-roma,.card-frança,.card-niagara {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -149,4 +149,12 @@ main {
   font-size: 1.1rem;
   font-weight: 700;
   margin: 1rem 0;
+}
+
+.rodape{
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(4, 6, 12, 0.1);
 }
